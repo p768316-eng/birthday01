@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Poonam ❤️</title>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Dancing+Script:wght@700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="birthday-page">
+
+    <div class="container">
+
+
+
+        <div class="birthday-card">
+
+            <img src="images/unnamed.png" alt="Mehwish" class="profile">
+
+            <h1>🎂 Happy Birthday</h1>
+            
+
+            <h2>Poonam ❤️</h2>
+
+            <p class="date">27 May</p>
+
+            <button id="openLetter">
+                Open Birthday Letter 💌
+            </button>
+
+            <audio controls autoplay loop>
+                <source src="images/music_02.mp3" type="audio/mpeg">
+            </audio>
+
+            <div class="login">
+                <a href="login_page.html">login sir</a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="popup" id="popup">
+
+        <div class="letter">
+
+            <span class="close">&times;</span>
+
+            <h2>To My Special Friend ❤️</h2>
+
+            <p>
+                Happy Birthday Poonam 🥳🎂
+
+                I wish you happiness, success, peace,
+                good health and lots of beautiful moments.
+
+                Thank you for being such an important
+                part of my life.
+
+                May all your dreams come true this year.
+
+                Stay happy and keep smiling 😊❤️
+            </p>
+
+
+        </div>
+
+
+
+    </div>
+
+    <script>
+        const popup = document.getElementById("popup");
+
+        document.getElementById("openLetter").onclick = () => {
+            popup.classList.add("show");
+        }
+
+        document.querySelector(".close").onclick = () => {
+            popup.classList.remove("show");
+        }
+    </script>
+
+</body>
+
+</html>
